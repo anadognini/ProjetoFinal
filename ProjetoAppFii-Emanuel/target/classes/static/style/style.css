@@ -1,0 +1,284 @@
+/* CONVERS�O DE MEDIDAS
+
+   https://codebeautify.org/px-to-percent-converter
+
+   PALETA DE CORES 
+
+   texto: #F4EDE8
+   fundo do body: #312E38
+   fundo barra de navega��o e forms: #28262E
+   placeholders e detalhes: #666360
+   detalhes e bot�es: #FF9000 */
+
+/* GERAL */
+
+@font-face {
+	font-family: Soin;
+	src: url("/fonts/soin_sans_neue-webfont.woff2") format("woff2"),
+		url("/fonts/soin_sans_neue-webfont.woff") format("woff");
+}
+
+* {
+	color: #F4EDE8;
+	font-family: 'Jost', sans-serif;
+	font-size: 117%;
+	background: #28262E;
+}
+
+body {
+	background: #312E38;
+	padding-bottom: 20%;
+}
+
+/* T�TULOS E SUBT�TULOS */
+
+h1,
+h3,
+h5 {
+	font-family: Soin, sans-serif;
+	color: #F4EDE8;
+	text-align: center;
+	text-shadow: 0px 0px 2px grey;
+}
+
+h1 {
+	font-size: 180%;
+}
+
+/* FORMUL�RIO DE CADASTRO E LOGIN */
+
+.formUsuario {
+	width: 34%;
+	margin-top: 5%;
+	border-radius: 10px;
+	background: #28262E;
+	box-shadow: 0 1px 3px 0 rgb(15, 15, 15);
+}
+
+.row {
+	-ms-transform: translate(50, 1000%);
+	transform: translate(-17%, 20%);
+	background: #232129;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px 0 rgb(15, 15, 15);
+}
+
+.form,
+select {
+	background: #232129;
+	border-radius: 10px;
+	margin: 2%;
+}
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+	padding: 1.5%;
+	border-bottom: 1px solid #232129;
+	-webkit-box-shadow: 0 1px 0 0 #232129;
+	box-shadow: 0 1px 0 0 #232129;
+	color: #666360;
+	width: 34%;
+}
+
+::placeholder {
+	color: #666360;
+	-ms-transform: translate(0%, 0%);
+	transform: translate(0%, -40%);
+}
+
+input#nome.validate,
+input#email.validate,
+input#data.validate,
+input#senha.validate {
+	border-bottom: 1px solid #232129;
+	-webkit-box-shadow: 0 1px 0 0 #232129;
+	margin-left: 7%;
+}
+
+/* BOT�ES E INPUTS */
+
+a.waves-effect.waves-light.btn,
+button.waves-effect.waves-light.btn,
+input.waves-effect.waves-light.btn,
+i.waves-effect.waves-light.btn.waves-input-wrapper {
+	color: #F4EDE8;
+	font-family: Soin, sans-serif;
+	background: #FF9000;
+	border-radius: 10px;
+}
+
+/* LOGIN */
+
+.formLogin {
+	-ms-transform: translate(00, 400%);
+	transform: translate(0%, 20%);
+	background: #312E38;
+}
+
+.tituloLogin {
+	transform: translate(-22%, 200%);
+	background: #312E38;
+}
+
+a.waves-effect.waves-light.forgot_password {
+	font-size: 95%;
+	color: #F4EDE8;
+	-ms-transform: translate(100%, 00%);
+	transform: translate(140%, 70%);
+}
+
+a.waves-effect.waves-light {
+	font-size: 95%;
+	-ms-transform: translate(50%, 1000%);
+	transform: translate(-311%, 500%);
+	color: #FF9000;
+}
+
+i.material-icons.login {
+	background: #232129;
+	color: #666360;
+	display: flex;
+	transform: translate(2.2%, 145%);
+	-ms-transform: translate(-50%, -60%);
+}
+
+/* CADASTRO */
+
+.formCadastro {
+	-ms-transform: translate(00, 400%);
+	transform: translate(0%, 2%);
+}
+
+.tituloCadastro {
+	transform: translate(-22%, 310%);
+}
+
+a.waves-effect.waves-light.voltar,
+i.material-icons.left.voltar {
+	color: #F4EDE8;
+}
+
+a.waves-effect.waves-light.voltar {
+	-ms-transform: translate(70, 400%);
+	transform: translate(190%, -300%);
+}
+
+a.waves-effect.waves-light,
+i.material-icons.left {
+	color: #FF9000;
+}
+
+button.waves-effect.waves-light.btn.salvar {
+	-ms-transform: translate(48, 1000%);
+	transform: translate(-7%, 200%);
+	padding-top: 1.1%;
+	padding-bottom: 7%;
+	width: 100%;
+}
+
+input.waves-button-input {
+	color: #F4EDE8;
+}
+
+input {
+	font-family: 'Jost', sans-serif;
+}
+
+button.waves-effect.waves-light.btn {
+	margin-top: 20px;
+}
+
+.login-btn {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#botao1 {
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -70%);
+	transform: translate(-50%, 1000%);
+}
+
+#botao2 {
+	top: 50%;
+	left: 48.5%;
+	-ms-transform: translate(-50%, -60%);
+	transform: translate(-50%, 1000%);
+	margin: 60px 0 0 30px;
+}
+
+#botaoLogin {
+	margin-top: 10px;
+}
+
+/* MENSAGEM DE ALERTA 
+.alert {
+	background: #3E6259;
+	padding: 5px;
+	width: 400px;
+	margin-left: 400px;
+	margin-bottom: 7px;
+	border-radius: 100px;
+	box-shadow: 0px 0px 3px grey;
+	font-weight: 500;
+	text-align: center;
+}
+
+.alert span {
+	color: #F4EDE8;
+	background: #3E6259;
+}*/
+
+/* DASHBOARD USU�RIO */
+
+nav {
+	background: #28262E;
+	font-family: Soin, sans-serif;
+}
+
+img.img_logo {
+	width: 60px;
+	margin-left: 5px;
+	margin-top: 2px;
+	transform: translate(20%, 1%);
+	-ms-transform: translate(-50%, -60%);
+}
+
+.navigation {
+	color: #F4EDE8;
+}
+
+a.brand-logo,
+a.brand-logo.navigation {
+	color: #F4EDE8;
+	padding: 0px 20px;
+	font-size: 25px;
+	font-family: Soin, sans-serif;
+	transform: translate(25%, -135%);
+	-ms-transform: translate(-50%, -60%);
+}
+
+nav .brand-logo {
+	position: relative;
+}
+
+i.material-icons.left.logoffBotao {
+	-ms-transform: translate(50, 1000%);
+	transform: translate(0%, 2%);
+	margin-right: 10px;
+	color: #666360;
+}
